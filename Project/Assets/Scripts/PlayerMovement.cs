@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] LayerMask mask;
 
     Animator anim;
-    
+    PlayerVariables vr;
 
     // Start is called before the first frame update
     void Start()
@@ -21,30 +21,46 @@ public class PlayerMovement : MonoBehaviour
 
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+        vr = GetComponent<PlayerVariables>();
     }
 
     // Update is called once per frame
     void Update()
     {
         float horiz = Input.GetAxis("Horizontal"), vert = Input.GetAxis("Vertical");
-        Vector3 move = (transform.forward * vert + transform.right * horiz) * speed;
+        Vector3 move = (transform.forward * vert + transform.right * horiz);
         Vector3 toCenter = transform.position - center.position;
         float yVel = rb.velocity.y;
+        float currSpeed = speed;
 
         if (Input.GetButton("Jump") && isGrounded()) {
             yVel = 5f;
         }
 
-        if (Input.GetMouseButtonDown(0) && !anim.GetBool("AttackTrue")) {
-            anim.SetBool("AttackTrue", true);
+        if (Input.GetMouseButtonDown(0) && !anim.GetBool("IsAttacking")) {
+            anim.SetBool("IsAttacking", true);
+        }
+        if (Input.GetMouseButtonDown(1) && !anim.GetBool("IsDefending"))
+        {
+            anim.SetBool("IsDefending", true);
+        } else if(Input.GetMouseButtonUp(1) && anim.GetBool("IsDefending")) {
+            anim.SetBool("IsDefending", false);
         }
 
         if (toCenter.magnitude > radius) { 
             Vector3 clampedPos = center.position + toCenter.normalized * radius;
             rb.MovePosition(clampedPos);
         }
+        if (Input.GetKey(KeyCode.LeftShift) && vr.stamina > 0f & move != Vector3.zero)
+        {
+            vr.stamina -= 0.005f;
+            currSpeed = speed * 2f;
+        }
+        else if (vr.stamina < 1f){
+            vr.stamina += 0.001f;
+        }
 
-        rb.velocity = new Vector3(move.x, yVel, move.z);
+        rb.velocity = new Vector3(move.x * currSpeed, yVel, move.z * currSpeed);
     }
     
     public void setFalse(string a) {
