@@ -63,10 +63,6 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector3(move.x * currSpeed, yVel, move.z * currSpeed);
     }
     
-    public void setFalse(string a) {
-        anim.SetBool(a, false);
-    }
-    
     bool isGrounded()
     {
         return Physics.CheckSphere(groundCheck.position, 0.2f, mask);
