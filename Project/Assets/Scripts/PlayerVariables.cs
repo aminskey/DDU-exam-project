@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerVariables : MonoBehaviour
 {
     public float stamina = 1f, health=1f;
+    public bool usingShield = false;
     [SerializeField] Slider staminaBar, healthBar; 
 
 

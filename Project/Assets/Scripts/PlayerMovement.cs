@@ -43,8 +43,10 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetMouseButtonDown(1) && !anim.GetBool("IsDefending"))
         {
             anim.SetBool("IsDefending", true);
+            vr.usingShield = true;
         } else if(Input.GetMouseButtonUp(1) && anim.GetBool("IsDefending")) {
             anim.SetBool("IsDefending", false);
+            vr.usingShield = false;
         }
 
         if (toCenter.magnitude > radius) { 

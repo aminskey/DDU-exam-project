@@ -323,6 +323,7 @@ GameObject:
   - component: {fileID: 9070222005498807177}
   - component: {fileID: 7362001489180135450}
   - component: {fileID: 6685025896663282659}
+  - component: {fileID: 8032869267908417722}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -429,7 +430,7 @@ Rigidbody:
   m_GameObject: {fileID: 7949407447130684495}
   serializedVersion: 4
   m_Mass: 61
-  m_Drag: 4.44
+  m_Drag: 2
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -480,7 +481,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3808bf8a56403484c8ef009cfa574972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
   detectionRange: 12
   followRange: 11
   attackRange: 3.2
@@ -524,6 +524,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58647b0a85ee9474d948bd34510dfee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8032869267908417722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7949407447130684495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9178a58fe918e4ea1e637ae15ba0c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stamina: 1
+  health: 1
+  staminaBar: {fileID: 0}
+  healthBar: {fileID: 0}
 --- !u!1 &8184872038571745992
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,6 +723,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 2026308988923723750, guid: 53199c77a821bfa4c8e00bdcef261716, type: 3}
+      propertyPath: wielder
+      value: 
+      objectReference: {fileID: 7606409831374299140}
     - target: {fileID: 2120463246165033657, guid: 53199c77a821bfa4c8e00bdcef261716, type: 3}
       propertyPath: m_Layer
       value: 6

@@ -5,7 +5,6 @@ using UnityEngine.AI;
 
 public class EnemyScript : MonoBehaviour
 {
-    [SerializeField] float health=1f;
     [SerializeField] float detectionRange = 10f;
     [SerializeField] float followRange = 4f;
     [SerializeField] float attackRange = 1f;
@@ -18,6 +17,8 @@ public class EnemyScript : MonoBehaviour
     float cooldown;
     NavMeshAgent agent;
     Animator anim;
+    PlayerVariables p;
+    Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,8 @@ public class EnemyScript : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         cooldown = attackCooldown;
+        p = GetComponent<PlayerVariables>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -38,8 +41,25 @@ public class EnemyScript : MonoBehaviour
         }
         cooldown -= Time.deltaTime;
         */
-        DetectPlayer();
-        cooldown -= Time.deltaTime;
+        
+        if(p.health <= 0f)
+        {
+            if (!anim.GetBool("IsDying"))
+            {
+                rb.constraints = RigidbodyConstraints.None;
+                rb.AddExplosionForce(25f, -transform.up, 5f);
+                anim.SetBool("IsDying", true);
+                agent.ResetPath();
+
+
+                transform.DetachChildren();
+                
+            }
+        } else
+        {
+            DetectPlayer();
+            cooldown -= Time.deltaTime;
+        }
         
         
     }

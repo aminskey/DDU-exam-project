@@ -1497,13 +1497,17 @@ PrefabInstance:
       propertyPath: staminaBar
       value: 
       objectReference: {fileID: 688773474}
+    - target: {fileID: 3190363565925823837, guid: 232a4c4b8f9dde54e82f9245ebd8db7a, type: 3}
+      propertyPath: usingShield
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6074264628009120793, guid: 232a4c4b8f9dde54e82f9245ebd8db7a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.0057595
       objectReference: {fileID: 0}
     - target: {fileID: 6074264628009120793, guid: 232a4c4b8f9dde54e82f9245ebd8db7a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.02
+      value: 4.61
       objectReference: {fileID: 0}
     - target: {fileID: 6074264628009120793, guid: 232a4c4b8f9dde54e82f9245ebd8db7a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2021,11 +2025,11 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 41179168}
   m_HandleRect: {fileID: 0}
-  m_Direction: 0
+  m_Direction: 1
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
