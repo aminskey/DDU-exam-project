@@ -41,7 +41,7 @@ public class EnemyScript : MonoBehaviour
         }
         cooldown -= Time.deltaTime;
         */
-        
+
         if(p.health <= 0f)
         {
             if (!anim.GetBool("IsDying"))
@@ -60,26 +60,41 @@ public class EnemyScript : MonoBehaviour
             DetectPlayer();
             cooldown -= Time.deltaTime;
         }
-        
+
+        if (agent.velocity.magnitude > 0f)
+        {
+            anim.SetBool("IsWalking", true);
+        }
+        else
+        {
+            anim.SetBool("IsWalking", false);
+        }
+
+
+        Debug.Log(agent.velocity.magnitude);
+
         
     }
     void DetectPlayer()
     {
-        float dist = Vector3.Distance(transform.position, player.position);
+        Vector3 vec = transform.position - player.position;
+        float dist = vec.magnitude;
         if (dist < detectionRange)
         {
-            
-            if(dist < followRange)
+            if (dist < followRange)
             {
-                head.LookAt(player);
+                // head.LookAt(target -> Vector3)
+                head.LookAt(new Vector3(vec.x, transform.position.y, vec.z));
                 agent.SetDestination(player.position);
-                if (dist <= attackRange && !anim.GetBool("IsAttacking") && cooldown <= 0f) {
-                    anim.SetBool("IsAttacking", true);
-                    cooldown = attackCooldown;
+                if (dist <= attackRange)
+                {
+                    agent.velocity = Vector3.zero;
+                    if (!anim.GetBool("IsAttacking") && cooldown <= 0f)
+                    {
+                        anim.SetBool("IsAttacking", true);
+                        cooldown = attackCooldown;
+                    }
                 }
-            } else
-            {
-                agent.ResetPath();
             }
         }
     }
