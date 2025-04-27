@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.AI;
+
 
 public class EnemyScript : MonoBehaviour
 {
@@ -42,38 +44,38 @@ public class EnemyScript : MonoBehaviour
         cooldown -= Time.deltaTime;
         */
 
-        if(p.health <= 0f)
+        if (p.health <= 0f)
         {
             if (!anim.GetBool("IsDying"))
             {
-                rb.constraints = RigidbodyConstraints.None;
-                rb.AddExplosionForce(25f, -transform.up, 5f);
+                rb.constraints = rb.constraints | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
                 anim.SetBool("IsDying", true);
                 agent.ResetPath();
-
-
-                transform.DetachChildren();
-                
+                Invoke("Die", 7f);
             }
-        } else
+        }
+        else
         {
             DetectPlayer();
             cooldown -= Time.deltaTime;
         }
 
-        if (agent.velocity.magnitude > 0f)
+        if (!anim.GetBool("IsAttacking"))
         {
-            anim.SetBool("IsWalking", true);
-        }
-        else
-        {
-            anim.SetBool("IsWalking", false);
+            if (agent.velocity.magnitude > 0f)
+            {
+                anim.SetBool("IsWalking", true);
+            }
+            else
+            {
+                anim.SetBool("IsWalking", false);
+            }
         }
 
 
         Debug.Log(agent.velocity.magnitude);
 
-        
+
     }
     void DetectPlayer()
     {
@@ -107,7 +109,8 @@ public class EnemyScript : MonoBehaviour
         float closestDist = Mathf.Infinity;
         foreach (Collider coll in colls)
         {
-            if (coll.transform != transform) {
+            if (coll.transform != transform)
+            {
                 float dist = Vector3.Distance(transform.position, coll.transform.position);
                 if (dist <= detectionRange && dist <= followRange)
                 {
@@ -123,5 +126,9 @@ public class EnemyScript : MonoBehaviour
         }
     }
 
-    
+    public void Die()
+    {
+        Destroy(transform.gameObject);
+    }
+
 }
