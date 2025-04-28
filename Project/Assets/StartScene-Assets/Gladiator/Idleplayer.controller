@@ -99,7 +99,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: c806604b59e0ef043a016a2e73a6de53, type: 3}
+  m_Motion: {fileID: -203655887218126122, guid: 06c6a312169c8dc4a9f05193fc4919b1, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -239,7 +239,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Idle
+  m_Name: Idleplayer
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: IsAttacking

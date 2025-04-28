@@ -230,6 +230,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 13.209845
       objectReference: {fileID: 0}
+    - target: {fileID: -4515902094662025350, guid: b0fa53672ba28da43a5e4acc9a0e39a5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f5187fd0c7a495c42b2b3d7d669ea241, type: 2}
+    - target: {fileID: -4370951018873524353, guid: b0fa53672ba28da43a5e4acc9a0e39a5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f5187fd0c7a495c42b2b3d7d669ea241, type: 2}
     - target: {fileID: -3746190272939815206, guid: b0fa53672ba28da43a5e4acc9a0e39a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -45.613754
@@ -770,6 +778,7 @@ MonoBehaviour:
   attackCooldown: 1
   player: {fileID: 8557550975356267348}
   dontDie: 0
+  nextScene: 0
 --- !u!114 &6038732200331288873
 MonoBehaviour:
   m_ObjectHideFlags: 0

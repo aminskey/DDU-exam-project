@@ -22,6 +22,7 @@ public class EnemyScript : MonoBehaviour
     NavMeshAgent agent;
     Animator anim;
     PlayerVariables p;
+    PlayerVariables p1;
     Rigidbody rb;
 
     // Start is called before the first frame update
@@ -32,6 +33,7 @@ public class EnemyScript : MonoBehaviour
         cooldown = attackCooldown;
         p = GetComponent<PlayerVariables>();
         rb = GetComponent<Rigidbody>();
+        p1 = player.gameObject.GetComponent<PlayerVariables>();
     }
 
     // Update is called once per frame
@@ -59,7 +61,14 @@ public class EnemyScript : MonoBehaviour
         }
         else
         {
-            DetectPlayer();
+            if (p1.health > 0f)
+                DetectPlayer();
+            else {
+                Debug.Log(p1.health);
+                anim.SetBool("IsAttacking", false);
+                anim.SetBool("IsWalking", false);
+                anim.SetBool("IsDying", false);
+            }
             cooldown -= Time.deltaTime;
         }
 
