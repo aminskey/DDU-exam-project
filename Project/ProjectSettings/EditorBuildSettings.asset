@@ -21,9 +21,24 @@ EditorBuildSettings:
     path: Assets/Scenes/ArenaScene.unity
     guid: 62e1894e929241a4799aa0ed8a12c143
   - enabled: 1
+    path: Assets/Scenes/EmporerSurviveMidway.unity
+    guid: 3305774a587d93443a84e59b45019fe6
+  - enabled: 1
     path: Assets/Scenes/ArenaScene 2.unity
     guid: b943b56670e24a54aa59070b9f5fc555
   - enabled: 1
+    path: Assets/Scenes/CellScene2.unity
+    guid: a88a835e31690464dba02f52b641d11f
+  - enabled: 1
+    path: Assets/Scenes/FightVOldman.unity
+    guid: 91f33ac208cc628418e61422baad794e
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: f72f7b56074b94b48a7c3121af68d5bb
+  - enabled: 1
+    path: Assets/Scenes/EmporerSurvive.unity
+    guid: 384966e4abcf41248bdc29a125bf1a00
+  - enabled: 1
+    path: Assets/Scenes/EmporerNotSurvive.unity
+    guid: bd011de797567ea4fa9c5fcad913780b
   m_configObjects: {}

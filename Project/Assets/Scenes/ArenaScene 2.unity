@@ -1323,6 +1323,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 447498863}
+    - target: {fileID: 9178849793117656703, guid: a7886039a9a61984bbfa51b7565eb07e, type: 3}
+      propertyPath: nextScene
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2930,7 +2934,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3143691998222065353, guid: a7886039a9a61984bbfa51b7565eb07e, type: 3}
       propertyPath: health
-      value: 1
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 7410563578295582095, guid: a7886039a9a61984bbfa51b7565eb07e, type: 3}
       propertyPath: m_Controller
