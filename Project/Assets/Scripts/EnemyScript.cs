@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 
 public class EnemyScript : MonoBehaviour
@@ -15,6 +16,7 @@ public class EnemyScript : MonoBehaviour
     [SerializeField] float attackCooldown = 1f;
     [SerializeField] Transform player;
     [SerializeField] bool dontDie=false;
+    [SerializeField] bool nextScene = false;
 
     float cooldown;
     NavMeshAgent agent;
@@ -52,6 +54,7 @@ public class EnemyScript : MonoBehaviour
                 anim.SetBool("IsDying", true);
                 agent.ResetPath();
                 if(!dontDie) Invoke("Die", 7f);
+                if (nextScene) Invoke("NextScene", 4f);
             }
         }
         else
@@ -129,6 +132,10 @@ public class EnemyScript : MonoBehaviour
     public void Die()
     {
         Destroy(transform.gameObject);
+    }
+
+    void NextScene() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
 }

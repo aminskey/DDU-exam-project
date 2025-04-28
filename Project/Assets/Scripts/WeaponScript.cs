@@ -28,5 +28,11 @@ public class WeaponScript : MonoBehaviour
                 p.health -= damage;
             }
         }
+        if (c.transform != wielder.transform && c.transform.TryGetComponent(out Execution e))
+        {
+            e.anim.SetBool("IsDying", true);
+        }
+
+
     }
 }
