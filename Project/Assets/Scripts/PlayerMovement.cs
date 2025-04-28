@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -63,6 +64,11 @@ public class PlayerMovement : MonoBehaviour
         }
 
         rb.velocity = new Vector3(move.x * currSpeed, yVel, move.z * currSpeed);
+
+        if (vr.health < 0f)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
     
     bool isGrounded()

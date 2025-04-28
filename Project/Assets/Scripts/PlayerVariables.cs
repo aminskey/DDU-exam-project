@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerVariables : MonoBehaviour
 {
@@ -14,6 +15,11 @@ public class PlayerVariables : MonoBehaviour
     void Start()
     {
         
+    }
+
+    void Update()
+    {
+
     }
 
     // Update is called once per frame

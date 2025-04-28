@@ -195,6 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stamina: 1
   health: 1
+  usingShield: 0
   staminaBar: {fileID: 0}
   healthBar: {fileID: 0}
 --- !u!114 &1294583334659166424
@@ -448,6 +449,7 @@ MonoBehaviour:
   sensX: 400
   sensY: 400
   parentBody: {fileID: 6074264628009120793}
+  lookRange: 10
 --- !u!1 &4943955948727273679
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,6 +800,10 @@ PrefabInstance:
     - target: {fileID: 963041026823577923, guid: 53199c77a821bfa4c8e00bdcef261716, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365003817561252546, guid: 53199c77a821bfa4c8e00bdcef261716, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1471185345748135939, guid: 53199c77a821bfa4c8e00bdcef261716, type: 3}
       propertyPath: m_Layer

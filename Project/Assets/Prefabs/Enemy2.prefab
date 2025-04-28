@@ -9,6 +9,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 320370256231733313}
     m_Modifications:
     - target: {fileID: 1712466135484435534, guid: 604e4771c8c9c9743a0243c5109226c3, type: 3}
+      propertyPath: damage
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712466135484435534, guid: 604e4771c8c9c9743a0243c5109226c3, type: 3}
       propertyPath: wielder
       value: 
       objectReference: {fileID: 8557550975356267348}
@@ -51,6 +55,10 @@ PrefabInstance:
     - target: {fileID: 2609688014315206699, guid: 604e4771c8c9c9743a0243c5109226c3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -58.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 4667966616241673450, guid: 604e4771c8c9c9743a0243c5109226c3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5310544243948332027, guid: 604e4771c8c9c9743a0243c5109226c3, type: 3}
       propertyPath: m_Name
@@ -704,6 +712,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8447082967072642302, guid: b0fa53672ba28da43a5e4acc9a0e39a5, type: 3}
   m_PrefabInstance: {fileID: 8162842738334960831}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &4220670585365466048 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5465940246521907071, guid: b0fa53672ba28da43a5e4acc9a0e39a5, type: 3}
+  m_PrefabInstance: {fileID: 8162842738334960831}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8557550975356267348 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b0fa53672ba28da43a5e4acc9a0e39a5, type: 3}
@@ -750,12 +763,13 @@ MonoBehaviour:
   detectionRange: 12
   followRange: 11
   attackRange: 1
-  head: {fileID: 8557550975356267348}
+  head: {fileID: 4220670585365466048}
   mask:
     serializedVersion: 2
     m_Bits: 64
   attackCooldown: 1
   player: {fileID: 8557550975356267348}
+  dontDie: 0
 --- !u!114 &6038732200331288873
 MonoBehaviour:
   m_ObjectHideFlags: 0

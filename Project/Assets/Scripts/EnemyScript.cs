@@ -14,7 +14,7 @@ public class EnemyScript : MonoBehaviour
     [SerializeField] LayerMask mask;
     [SerializeField] float attackCooldown = 1f;
     [SerializeField] Transform player;
-
+    [SerializeField] bool dontDie=false;
 
     float cooldown;
     NavMeshAgent agent;
@@ -51,7 +51,7 @@ public class EnemyScript : MonoBehaviour
                 rb.constraints = rb.constraints | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
                 anim.SetBool("IsDying", true);
                 agent.ResetPath();
-                Invoke("Die", 7f);
+                if(!dontDie) Invoke("Die", 7f);
             }
         }
         else
