@@ -8,13 +8,12 @@ public class PlayerVariables : MonoBehaviour
 {
     public float stamina = 1f, health=1f;
     public bool usingShield = false;
-    [SerializeField] Slider staminaBar, healthBar; 
+    [SerializeField] Slider staminaBar, healthBar;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     void Update()

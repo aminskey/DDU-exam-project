@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
             vr.stamina += 0.001f;
         }
 
-        rb.velocity = new Vector3(move.x * currSpeed, yVel, move.z * currSpeed);
+        if(move.magnitude > 0f || yVel > 0f) rb.velocity = new Vector3(move.x * currSpeed, yVel, move.z * currSpeed);
 
         if (vr.health < 0f)
         {

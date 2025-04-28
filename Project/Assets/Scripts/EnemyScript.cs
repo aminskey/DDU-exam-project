@@ -17,13 +17,15 @@ public class EnemyScript : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] bool dontDie=false;
     [SerializeField] bool nextScene = false;
+    [SerializeField] bool knockback = false;
+    [SerializeField] bool canSprint = false;
 
-    float cooldown;
+    float cooldown, speed;
     NavMeshAgent agent;
     Animator anim;
     PlayerVariables p;
     PlayerVariables p1;
-    Rigidbody rb;
+    Rigidbody rb, rb2;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +35,10 @@ public class EnemyScript : MonoBehaviour
         cooldown = attackCooldown;
         p = GetComponent<PlayerVariables>();
         rb = GetComponent<Rigidbody>();
+        rb2 = player.gameObject.GetComponent<Rigidbody>();
         p1 = player.gameObject.GetComponent<PlayerVariables>();
+
+        speed = agent.speed;
     }
 
     // Update is called once per frame
@@ -76,11 +81,25 @@ public class EnemyScript : MonoBehaviour
         {
             if (agent.velocity.magnitude > 0f)
             {
-                anim.SetBool("IsWalking", true);
+                if ((transform.position - player.position).magnitude > 40f || (transform.position - player.position).magnitude < 3f)
+                {
+                    anim.SetBool("IsRunning", false);
+                    anim.SetBool("IsWalking", true);
+                    agent.speed = speed;
+                   
+                } 
+                else
+                {
+                    anim.SetBool("IsWalking", false);
+                    anim.SetBool("IsRunning", true);
+                    agent.speed = 2f * speed;
+
+                }
             }
             else
             {
                 anim.SetBool("IsWalking", false);
+                anim.SetBool("IsRunning", false);
             }
         }
 
@@ -106,11 +125,18 @@ public class EnemyScript : MonoBehaviour
                     if (!anim.GetBool("IsAttacking") && cooldown <= 0f)
                     {
                         anim.SetBool("IsAttacking", true);
+                        explosionForce();
+                        
                         cooldown = attackCooldown;
                     }
                 }
             }
         }
+    }
+
+    void explosionForce()
+    {
+        rb2.AddExplosionForce(50f, player.position, 10f);
     }
 
     void DetectClosestFighter()
