@@ -13,4 +13,13 @@ public class Utility : MonoBehaviour
     {
         anim.SetBool(a, false);
     }
+    public void Quit()
+    {
+        Invoke("Quit1", 0.125f);
+    }
+
+    void Quit1()
+    {
+        Application.Quit();
+    }
 }
