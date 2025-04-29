@@ -19,6 +19,7 @@ public class EnemyScript : MonoBehaviour
     [SerializeField] bool nextScene = false;
     [SerializeField] bool knockback = false;
     [SerializeField] bool canSprint = false;
+    [SerializeField] Slider healthbar;
 
     float cooldown, speed;
     NavMeshAgent agent;
@@ -44,14 +45,8 @@ public class EnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-        if (cooldown <= 0)
-        {
-            DetectPlayer();
-            cooldown = 2f;
-        }
-        cooldown -= Time.deltaTime;
-        */
+        if (healthbar != null)
+            healthbar.value = p.health;
 
         if (p.health <= 0f)
         {
@@ -88,7 +83,7 @@ public class EnemyScript : MonoBehaviour
                     agent.speed = speed;
                    
                 } 
-                else
+                else if (canSprint)
                 {
                     anim.SetBool("IsWalking", false);
                     anim.SetBool("IsRunning", true);
@@ -125,42 +120,11 @@ public class EnemyScript : MonoBehaviour
                     if (!anim.GetBool("IsAttacking") && cooldown <= 0f)
                     {
                         anim.SetBool("IsAttacking", true);
-                        explosionForce();
                         
                         cooldown = attackCooldown;
                     }
                 }
             }
-        }
-    }
-
-    void explosionForce()
-    {
-        rb2.AddExplosionForce(50f, player.position, 10f);
-    }
-
-    void DetectClosestFighter()
-    {
-        Collider[] colls = Physics.OverlapSphere(transform.position, detectionRange, mask);
-        Collider closestFighter = null;
-
-        float closestDist = Mathf.Infinity;
-        foreach (Collider coll in colls)
-        {
-            if (coll.transform != transform)
-            {
-                float dist = Vector3.Distance(transform.position, coll.transform.position);
-                if (dist <= detectionRange && dist <= followRange)
-                {
-                    closestFighter = coll;
-                }
-            }
-        }
-
-        if (closestFighter != null)
-        {
-            head.LookAt(closestFighter.transform);
-            agent.SetDestination(closestFighter.transform.position);
         }
     }
 

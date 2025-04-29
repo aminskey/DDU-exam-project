@@ -2013,6 +2013,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 791268919}
     - target: {fileID: 93654110331828058, guid: ce70f77cedad35a4da988fa585c0428b, type: 3}
+      propertyPath: canSprint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 93654110331828058, guid: ce70f77cedad35a4da988fa585c0428b, type: 3}
+      propertyPath: healthbar
+      value: 
+      objectReference: {fileID: 1086138061}
+    - target: {fileID: 93654110331828058, guid: ce70f77cedad35a4da988fa585c0428b, type: 3}
       propertyPath: knockback
       value: 1
       objectReference: {fileID: 0}
@@ -2026,12 +2034,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 102340718700557509, guid: ce70f77cedad35a4da988fa585c0428b, type: 3}
       propertyPath: health
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 102340718700557509, guid: ce70f77cedad35a4da988fa585c0428b, type: 3}
       propertyPath: healthBar
       value: 
-      objectReference: {fileID: 1086138061}
+      objectReference: {fileID: 0}
+    - target: {fileID: 102340718700557509, guid: ce70f77cedad35a4da988fa585c0428b, type: 3}
+      propertyPath: staminaBar
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 314589954333501134, guid: ce70f77cedad35a4da988fa585c0428b, type: 3}
       propertyPath: damage
       value: 0.1
@@ -2123,7 +2135,7 @@ PrefabInstance:
     - target: {fileID: 953238824410259871, guid: ce70f77cedad35a4da988fa585c0428b, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: b9d6588af7fd64a4a9f59365cbe5184c, type: 2}
+      objectReference: {fileID: 9100000, guid: 7338dbd9471000a43880eaeeda29b60e, type: 2}
     - target: {fileID: 1108297052704850210, guid: ce70f77cedad35a4da988fa585c0428b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 44.81721
@@ -2666,7 +2678,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1768867692
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3390,6 +3402,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2401800431683237475, guid: 09c88e67845a50849a0e0d27d83a7404, type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401800431683237475, guid: 09c88e67845a50849a0e0d27d83a7404, type: 3}
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 0}
@@ -3399,6 +3415,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3110264414370015896, guid: 09c88e67845a50849a0e0d27d83a7404, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110264414370015896, guid: 09c88e67845a50849a0e0d27d83a7404, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3914898616171038261, guid: 09c88e67845a50849a0e0d27d83a7404, type: 3}
@@ -3480,6 +3500,10 @@ PrefabInstance:
     - target: {fileID: 3914898616171038261, guid: 09c88e67845a50849a0e0d27d83a7404, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6306906407643845800, guid: 09c88e67845a50849a0e0d27d83a7404, type: 3}
+      propertyPath: m_Value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6465622784080890413, guid: 09c88e67845a50849a0e0d27d83a7404, type: 3}
       propertyPath: m_AnchoredPosition.x
