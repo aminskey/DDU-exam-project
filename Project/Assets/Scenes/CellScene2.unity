@@ -610,8 +610,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "You: \u201CWould\u2019ve been a waste to lose you.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -838,8 +838,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Cellmate: \u201CYou didn\u2019t have to do it.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1909,8 +1909,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Cellmate: \u201CNever was.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2043,8 +2043,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: The next morning
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3310,8 +3310,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Cellmate: \u201CMaybe you\u2019re not as stupid as you look.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3444,8 +3444,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Cellmate: \u201CNext time, I\u2019ve got your back.\u201D\n\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3683,8 +3683,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Cellmate: \u201CIt\u2019s you against me today.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3911,8 +3911,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "You \u201C...No choice?\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4245,8 +4245,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "You: \u201CWhat\u2019s wrong?\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5333,8 +5333,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Cellmate: \u201CWake up.\u201D\n\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

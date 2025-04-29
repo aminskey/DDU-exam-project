@@ -17,7 +17,6 @@ public class EnemyScript : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] bool dontDie=false;
     [SerializeField] bool nextScene = false;
-    [SerializeField] bool knockback = false;
     [SerializeField] bool canSprint = false;
     [SerializeField] Slider healthbar;
 
@@ -52,7 +51,10 @@ public class EnemyScript : MonoBehaviour
         {
             if (!anim.GetBool("IsDying"))
             {
-                rb.constraints = rb.constraints | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+                if(rb != null)
+                    rb.constraints = rb.constraints | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+                anim.SetBool("IsAttacking", false);
+                anim.SetBool("IsWalking", false);
                 anim.SetBool("IsDying", true);
                 agent.ResetPath();
                 if(!dontDie) Invoke("Die", 7f);
@@ -70,35 +72,37 @@ public class EnemyScript : MonoBehaviour
                 anim.SetBool("IsDying", false);
             }
             cooldown -= Time.deltaTime;
-        }
 
-        if (!anim.GetBool("IsAttacking"))
-        {
-            if (agent.velocity.magnitude > 0f)
+            if (!anim.GetBool("IsAttacking"))
             {
-                if (canSprint && (transform.position - player.position).magnitude < 40f && (transform.position - player.position).magnitude > 3f)
+                if (agent.velocity.magnitude > 0f)
                 {
-                    anim.SetBool("IsWalking", false);
-                    anim.SetBool("IsRunning", true);
-                    agent.speed = 2f * speed;
-                   
-                } 
+                    if (canSprint && (transform.position - player.position).magnitude < 40f && (transform.position - player.position).magnitude > 3f)
+                    {
+                        anim.SetBool("IsWalking", false);
+                        anim.SetBool("IsRunning", true);
+                        agent.speed = 2f * speed;
+
+                    }
+                    else
+                    {
+                        anim.SetBool("IsRunning", false);
+                        anim.SetBool("IsWalking", true);
+                        agent.speed = speed;
+                    }
+                }
                 else
                 {
+                    anim.SetBool("IsWalking", false);
                     anim.SetBool("IsRunning", false);
-                    anim.SetBool("IsWalking", true);
-                    agent.speed = speed;
                 }
             }
-            else
-            {
-                anim.SetBool("IsWalking", false);
-                anim.SetBool("IsRunning", false);
-            }
+
+
+            Debug.Log(agent.velocity.magnitude);
         }
 
 
-        Debug.Log(agent.velocity.magnitude);
 
 
     }

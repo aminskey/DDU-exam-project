@@ -182,8 +182,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "You: \u201CWhat\u2019s happening...?\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -563,8 +563,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "You: \u201CYou don\u2019t even know me.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -956,8 +956,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Cellmate: \u201CThey\u2019ll break you. Sooner or later.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2195,8 +2195,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Cellmate: \u201CDon\u2019t get me killed.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3140,8 +3140,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "You: \u201CI\u2019m just trying to survive.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3274,8 +3274,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "You: \u201CWouldn\u2019t dream of it.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4017,8 +4017,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Cellmate: "Another fool chasing glory."'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4256,8 +4256,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Cellmate: \u201CThat\u2019s what I said... ten deaths ago.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4390,8 +4390,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Cellmate: \u201CWe\u2019re up. Together.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4773,8 +4773,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Cellmate: \u201CI know enough.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5225,8 +5225,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: The next morning
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
