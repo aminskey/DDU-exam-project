@@ -76,19 +76,18 @@ public class EnemyScript : MonoBehaviour
         {
             if (agent.velocity.magnitude > 0f)
             {
-                if ((transform.position - player.position).magnitude > 40f || (transform.position - player.position).magnitude < 3f)
-                {
-                    anim.SetBool("IsRunning", false);
-                    anim.SetBool("IsWalking", true);
-                    agent.speed = speed;
-                   
-                } 
-                else if (canSprint)
+                if (canSprint && (transform.position - player.position).magnitude < 40f && (transform.position - player.position).magnitude > 3f)
                 {
                     anim.SetBool("IsWalking", false);
                     anim.SetBool("IsRunning", true);
                     agent.speed = 2f * speed;
-
+                   
+                } 
+                else
+                {
+                    anim.SetBool("IsRunning", false);
+                    anim.SetBool("IsWalking", true);
+                    agent.speed = speed;
                 }
             }
             else
