@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 9935021462637924e9e9e6d5bde4bf2e, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -340,8 +340,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Crowd: "Kill!"'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1196,8 +1196,8 @@ MonoBehaviour:
   m_text: "In the days that followed, the empire shifted.\nThe people demanded a
     new ruler \u2014 one who had bled beside them, not above them."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1765,8 +1765,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "They chanted for the gladiator who defied him\u2026 and lived."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2934,8 +2934,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "You: \u201CI don\u2019t fight for them.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3469,8 +3469,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Cellmate: \u201CIt\u2019s your choice now.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3691,8 +3691,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4199,8 +4199,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Emperor: \u201CDo it, slave.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4426,8 +4426,8 @@ MonoBehaviour:
 
     The game'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5592,8 +5592,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: And so, the gladiator became Emperor.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5726,8 +5726,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Emperor: \u201CBe what they made you.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5954,8 +5954,8 @@ MonoBehaviour:
     But in a world ruled by spectacle, only the
     victor commands the stage.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6639,8 +6639,8 @@ MonoBehaviour:
   m_text: The slave who once woke in chains now stood crowned by the will of the
     crowd.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7275,8 +7275,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: The crowd did not chant for the Emperor again.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7409,8 +7409,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Emperor: \u201CThey don\u2019t cheer for mercy.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 3ac4694e7eae1834688fe3e2cbbb28cb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7787,8 +7787,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853682347}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.17755349, y: -0.7918819, z: -0.27410406, w: -0.51600844}
-  m_LocalPosition: {x: -46.45527, y: 5.823017, z: 18.66222}
+  m_LocalRotation: {x: 0.10948022, y: -0.12537259, z: -0.014717101, w: -0.9859409}
+  m_LocalPosition: {x: -46.86651, y: 11.620061, z: 68.90282}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
