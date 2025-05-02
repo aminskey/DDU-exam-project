@@ -6,17 +6,6 @@ public class WeaponScript : MonoBehaviour
 {
     public float damage=0.25f;
     [SerializeField] Transform wielder;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void OnTriggerEnter(Collider c)
     {
@@ -32,7 +21,5 @@ public class WeaponScript : MonoBehaviour
         {
             e.anim.SetBool("IsDying", true);
         }
-
-
     }
 }
